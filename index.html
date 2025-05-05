@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
-    
+    <form>
+        <label>Nombre Completo</label>
+        <input type="text" placeholder="Ej: nombre completo"pattern="[A-Za-z]+"><br><br>
+
+        <label>Edad</label>
+        <input type="number" placeholder="Ej: 22"><br><br>
+
+        <label>Ingrese Password</label>
+        <input type="password"><br><br>
+
+        <p><strong>Género</strong></p>
+        <input type="radio" name="genero" value="masculino"> Masculino<br>
+        <input type="radio" name="genero" value="femenino"> Femenino<br>
+        <input type="radio" name="genero" value="otro"> Otro<br><br>
+
+        <p><strong>Hobbies</strong></p>
+        <input type="checkbox" name="hobbies" value="musica"> Escuchar musica<br>
+        <input type="checkbox" name="hobbies" value="dormir"> Dormir<br>
+        <input type="checkbox" name="hobbies" value="leer"> Leer<br>
+        <input type="checkbox" name="hobbies" value="youtube"> Ver youtube<br><br>
+
+        <p><strong>Ubicación</strong></p>
+        <label>¿Dónde resides?</label>
+        <select>
+            <option>Seleccione una</option>
+            <option>Lima</option>
+            <option>Arequipa</option>
+            <option>Otro</option>
+        </select><br><br>
+
+        <label>País</label>
+        <select>
+            <option>Seleccione un país</option>
+            <option>Perú</option>
+            <option>Chile</option>
+            <option>Colombia</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
