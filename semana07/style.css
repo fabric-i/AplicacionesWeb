@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff;
+}
+
+.claro {
+    background-color: #a7ffeb !important;
+}
+
+.oscuro {
+    background-color: #64d8cb !important;
+}
+
+.border {
+    border: 1px solid #bdbdbd !important;
+    border-radius: 4px;
+}
+
+h1, h2 {
+    color: #222;
+}
+
+.fw-bold {
+    font-weight: bold;
+}

@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.box {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box div{
+    width: 300px;
+    background-color:red ;
+}
+
+.box div:first-child {
+    background-color: yellow;
+    flex-grow: 1;
+}
+
+.box div:last-child {
+    background-color: aqua;
+    flex-shrink: 2;
+}
+
+.flex-inicio{
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.flex-inicio div{
+    background-color: gray;
+}
+
+.flex-inicio div:first-child {
+    background-color: yellow;
+}
+
+.flex-inicio div:last-child {
+    background-color: aqua;
+}
+
+.flex-final{
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.flex-final div{
+    background-color: gray;
+}
+
+.flex-final div:first-child {
+    background-color: yellow;
+}
+
+.flex-final div:last-child {
+    background-color: aqua;
+}
+
+.flex-center{
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-center;
+    width: 100%;
+}
+
+.flex-center div{
+    background-color: gray;
+}
+
+.flex-center div:first-child {
+    background-color: yellow;
+}
+
+.flex-center div:last-child {
+    background-color: aqua;
+}
+

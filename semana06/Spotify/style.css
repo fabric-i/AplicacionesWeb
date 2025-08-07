@@ -1,0 +1,226 @@
+
+
+:root {
+    --primary-color: #1db954;
+    --secondary-color-01: #000000;
+    --secondary-color-02: #191414;
+    --secondary-color-03: #505050;
+    --secondary-color-04: #ffffff;
+
+    --genre-color01: #55a891;
+    --genre-color02: #27856a;
+    --genre-color03: #5f8109;
+
+    --genre-color05: #f037a5;
+    --genre-color06: #af2896;
+    --genre-color07: #af2896;
+    --genre-color08: #477d95;
+    --genre-color09: #509bf5;
+    --genre-color10: #1d3164;
+    --genre-color11: #e8115b;
+    --genre-color12: #e13300;
+    --genre-color13: #ba5d07;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--secondary-color-01);
+    color:var(--secondary-color-04);
+
+}
+
+h5 {
+    color:gray;
+}
+
+section{
+    padding: 40px;
+}
+
+.tarjeta-busqueda{
+    display: flex;
+    gap:20px;
+    overflow-x:scroll;
+}
+
+.tarjeta-busqueda::-webkit-scrollbar {
+    height: 6px;
+}
+
+.tarjeta-busqueda::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px;
+}
+
+.tarjeta-busqueda::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.tarjeta{
+    background-color: var(--secondary-color-02);
+    width: 250px;
+    height: 230px;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    gap:5px ;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--secondary-color-02);
+    color: var(--secondary-color-04);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+main {
+    margin-left: 220px;
+    padding: 40px;
+}
+
+.nombre-busqueda {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.top-genres, .browse-all {
+    margin-top: -40px;
+}
+
+.genre-grid {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.genre-card {
+    width: 450px;
+    height: 100px;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.browse-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.browse-card {
+    height: 100px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+}
+
+.genre1 { background-color: var(--genre-color01); }
+.genre2 { background-color: var(--genre-color02); }
+.genre3 { background-color: var(--genre-color03); }
+.genre4 { background-color: var(--genre-color05); }
+.genre5 { background-color: var(--genre-color06); }
+.genre6 { background-color: var(--genre-color07); }
+.genre7 { background-color: var(--genre-color08); }
+.genre8 { background-color: var(--genre-color09); }
+.genre9 { background-color: var(--genre-color10); }
+.genre10 { background-color: var(--genre-color11); }
+.genre11 { background-color: var(--genre-color12); }
+.genre12 { background-color: var(--genre-color13); }
+.genre13 { background-color: var(--primary-color); }
+
+.genre-card, .browse-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.genre-card img, .browse-card img {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 80px;
+    transform: rotate(25deg);
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding: 15px 30px;
+    background-color: var(--secondary-color-01);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navigation-arrows i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 40px 8px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--secondary-color-02);
+    color: white;
+    font-size: 14px;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}

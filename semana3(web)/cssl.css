@@ -1,0 +1,77 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: teal;
+    font-size: 40px;
+    text-align: center;
+}
+
+.seccion {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.redes {
+    display: flex;
+    gap: 20px; /* Espacio entre redes */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.facebook {
+    color: #1877F2; /* azul Facebook */
+}
+
+.instagram {
+    color: #E1306C; /* rosado Instagram */
+}
+
+.tiktok {
+    color: #000000; /* negro TikTok */
+}
+
+
+.facebook,
+.instagram,
+.tiktok {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.curso1 {
+    color: darkgreen;
+}
+
+.curso2 {
+    color: darkred;
+}
+
+.curso3 {
+    color: navy;
+}
+
+.curso4 {
+    color: purple;
+}
+
+.curso5 {
+    color: orange;
+}
+
+.curso1,
+.curso2,
+.curso3,
+.curso4,
+.curso5 {
+    font-weight: bold;
+    text-decoration: none;
+}
+ul {
+    margin-top: 10px;
+}
+

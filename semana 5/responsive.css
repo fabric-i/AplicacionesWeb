@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    font-size: 10px;
+    background: green;
+    font-weight: bold;
+    padding: 10px;
+    margin: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 0 10px 10px green,
+                0 10px blue,
+                -100px 0 black
+}
+
+.contenedor {
+    display: flex;
+}
+
+.tarjeta1 {
+    width: 200px;
+    height: 200px;
+    transition-duration: 0.5s;
+    transition-timing-function: none;
+    transition-delay: 1s;
+    background: coral;
+    border-top-left-radius: 53px;
+    border-bottom-right-radius: 53%;
+    box-shadow: 0 0 15px 15px black;
+}
+
+.tarjeta1:hover {
+    background: yellow  ;
+}
+
+.tarjeta2 {
+    width: 200px;
+    height: 200px;
+    background: burlywood;
+    border-bottom-left-radius: 53px;
+    border-top-right-radius: 53%;
+    box-shadow: inset 5px 3px red;
+}
+
+.tarjeta3 {
+    width: 200px;
+    height: 200px;
+    background: yellowgreen;
+    border-top-right-radius: 53px;
+    border-bottom-left-radius: 53%;
+    box-shadow: ;
+}
+
+.tarjeta4 {
+    width: 200px;
+    height: 200px;
+    background: violet;
+    border-bottom-right-radius: 53px;
+    border-top-left-radius: 53%;
+}
+
+@media screen and (max-width: 600px){
+    .header{
+    color: black;
+    background-color: yellow;
+    }
+    
+    .tarjeta1 {
+    background: black;
+    }
+
+    .tarjeta2{
+        background: blue;
+    }
+
+    .tarjeta3 {
+    background: gray;
+    }
+
+    .tarjeta4{
+        background: goldenrod;
+    }
+}
